@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.page-break {
+    page-break-before: always;
+}
+
+
+.label-container {
+    width: 100vw;
+    height: 100vh;
+    line-height: 100%;
+}
+
+.label-container .cod {
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
