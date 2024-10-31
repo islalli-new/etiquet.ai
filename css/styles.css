@@ -3,20 +3,36 @@
 
 body {
     font-family: "Open Sans", sans-serif;
+    font-size: 12pt;
 }
 
-.page-break {
+
+
+
+.label-container {
+    line-height: 100%;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2), 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 1mm;
+}
+
+.label-container .cod {
+    font-size: 12pt;
+    letter-spacing: 1mm;
+    font-weight: 800;
+}
+
+.media {
+
+
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.2), inset 0 0 10px 1px rgba(216, 246, 255, 0.8);
+
+    
     page-break-before: always;
 }
 
 
-.label-container {
-    width: 100vw;
-    height: 100vh;
-    line-height: 100%;
-}
-
-.label-container .cod {
-    font-size: 2rem;
-    letter-spacing: 2px;
-}
+@media print {
+    .label-container, .media {
+      box-shadow: none;
+    }
+  }
