@@ -60,22 +60,22 @@
 
       <div class="mb-3">
         <label for="from" class="form-label">Número da primeira etiqueta:</label>
-        <input type="number" class="form-control" id="from" name="from" value="<?= isset($_GET['from']) ? $_GET['from'] : 1 ?>">
+        <input type="text" class="form-control" id="from" name="from" value="<?= isset($_GET['from']) ? $_GET['from'] : 1 ?>">
       </div>
       <div class="mb-3">
         <label for="to" class="form-label">Número da última etiqueta:</label>
-        <input type="number" class="form-control" id="to" name="to" value="<?= isset($_GET['to']) ? $_GET['to'] : 2000 ?>">
+        <input type="text" class="form-control" id="to" name="to" value="<?= isset($_GET['to']) ? $_GET['to'] : 2000 ?>">
       </div>
 
       <h2>Layout da Mídia</h2>
 
       <div class="mb-3">
         <label for="rows" class="form-label">Linhas por mídia:</label>
-        <input type="number" class="form-control" id="rows" name="rows" value="<?= isset($_GET['rows']) ? $_GET['rows'] : 1 ?>">
+        <input type="text" class="form-control" id="rows" name="rows" value="<?= isset($_GET['rows']) ? $_GET['rows'] : 1 ?>">
       </div>
       <div class="mb-3">
         <label for="cols" class="form-label">Colunas por mídia:</label>
-        <input type="number" class="form-control" id="cols" name="cols" value="<?= isset($_GET['cols']) ? $_GET['cols'] : 3 ?>">
+        <input type="text" class="form-control" id="cols" name="cols" value="<?= isset($_GET['cols']) ? $_GET['cols'] : 3 ?>">
       </div>
       <div class="mb-3 form-check">
         <input type="checkbox" class="form-check-input" id="tmedia" name="tmedia" value="folha" <?= isset($_GET['tmedia']) && $_GET['tmedia'] == 'folha' ? 'checked' : '' ?>>
@@ -86,11 +86,11 @@
 
       <div class="mb-3">
         <label for="wmedia" class="form-label">Largura da mídia (mm):</label>
-        <input type="number" class="form-control" id="wmedia" name="wmedia" value="<?= isset($_GET['wmedia']) ? $_GET['wmedia'] : 210 ?>">
+        <input type="text" class="form-control" id="wmedia" name="wmedia" value="<?= isset($_GET['wmedia']) ? $_GET['wmedia'] : 210 ?>">
       </div>
       <div class="mb-3">
         <label for="hmedia" class="form-label">Altura da mídia (mm):</label>
-        <input type="number" class="form-control" id="hmedia" name="hmedia" value="<?= isset($_GET['hmedia']) ? $_GET['hmedia'] : 297 ?>">
+        <input type="text" class="form-control" id="hmedia" name="hmedia" value="<?= isset($_GET['hmedia']) ? $_GET['hmedia'] : 297 ?>">
       </div>
 
       <h3>Padding da Mídia (mm)</h3>
@@ -100,39 +100,39 @@
       ?>
       <div class="mb-3">
         <label for="pmediaTop" class="form-label">Topo:</label>
-        <input type="number" class="form-control" id="pmediaTop" value="<?= $pmedia[0] ?>">
+        <input type="text" class="form-control" id="pmediaTop" value="<?= $pmedia[0] ?>">
       </div>
       <div class="mb-3">
         <label for="pmediaRight" class="form-label">Direita:</label>
-        <input type="number" class="form-control" id="pmediaRight" value="<?= $pmedia[1] ?>">
+        <input type="text" class="form-control" id="pmediaRight" value="<?= $pmedia[1] ?>">
       </div>
       <div class="mb-3">
         <label for="pmediaBottom" class="form-label">Base:</label>
-        <input type="number" class="form-control" id="pmediaBottom" value="<?= $pmedia[2] ?>">
+        <input type="text" class="form-control" id="pmediaBottom" value="<?= $pmedia[2] ?>">
       </div>
       <div class="mb-3">
         <label for="pmediaLeft" class="form-label">Esquerda:</label>
-        <input type="number" class="form-control" id="pmediaLeft" value="<?= $pmedia[3] ?>">
+        <input type="text" class="form-control" id="pmediaLeft" value="<?= $pmedia[3] ?>">
       </div>
 
       <div class="mb-3">
         <label for="grmedia" class="form-label">Espaçamento entre linhas (mm):</label>
-        <input type="number" class="form-control" id="grmedia" name="grmedia" value="<?= isset($_GET['grmedia']) ? $_GET['grmedia'] : 5 ?>">
+        <input type="text" class="form-control" id="grmedia" name="grmedia" value="<?= isset($_GET['grmedia']) ? $_GET['grmedia'] : 5 ?>">
       </div>
       <div class="mb-3">
         <label for="gcmedia" class="form-label">Espaçamento entre colunas (mm):</label>
-        <input type="number" class="form-control" id="gcmedia" name="gcmedia" value="<?= isset($_GET['gcmedia']) ? $_GET['gcmedia'] : 5 ?>">
+        <input type="text" class="form-control" id="gcmedia" name="gcmedia" value="<?= isset($_GET['gcmedia']) ? $_GET['gcmedia'] : 5 ?>">
       </div>
 
       <h2>Dimensões da Etiqueta</h2>
 
       <div class="mb-3">
         <label for="wlabel" class="form-label">Largura da etiqueta (mm):</label>
-        <input type="number" class="form-control" id="wlabel" name="wlabel" value="<?= isset($_GET['wlabel']) ? $_GET['wlabel'] : 70 ?>">
+        <input type="text" class="form-control" id="wlabel" name="wlabel" value="<?= isset($_GET['wlabel']) ? $_GET['wlabel'] : 70 ?>">
       </div>
       <div class="mb-3">
         <label for="hlabel" class="form-label">Altura da etiqueta (mm):</label>
-        <input type="number" class="form-control" id="hlabel" name="hlabel" value="<?= isset($_GET['hlabel']) ? $_GET['hlabel'] : 35 ?>">
+        <input type="text" class="form-control" id="hlabel" name="hlabel" value="<?= isset($_GET['hlabel']) ? $_GET['hlabel'] : 35 ?>">
       </div>
 
       <h3>Padding da Etiqueta (mm)</h3>
@@ -142,19 +142,19 @@
       ?>
       <div class="mb-3">
         <label for="plabelTop" class="form-label">Topo:</label>
-        <input type="number" class="form-control" id="plabelTop" value="<?= $plabel[0] ?>">
+        <input type="text" class="form-control" id="plabelTop" value="<?= $plabel[0] ?>">
       </div>
       <div class="mb-3">
         <label for="plabelRight" class="form-label">Direita:</label>
-        <input type="number" class="form-control" id="plabelRight" value="<?= $plabel[1] ?>">
+        <input type="text" class="form-control" id="plabelRight" value="<?= $plabel[1] ?>">
       </div>
       <div class="mb-3">
         <label for="plabelBottom" class="form-label">Base:</label>
-        <input type="number" class="form-control" id="plabelBottom" value="<?= $plabel[2] ?>">
+        <input type="text" class="form-control" id="plabelBottom" value="<?= $plabel[2] ?>">
       </div>
       <div class="mb-3">
         <label for="plabelLeft" class="form-label">Esquerda:</label>
-        <input type="number" class="form-control" id="plabelLeft" value="<?= $plabel[3] ?>">
+        <input type="text" class="form-control" id="plabelLeft" value="<?= $plabel[3] ?>">
       </div>
 
       <button type="submit" class="btn btn-primary">Gerar Etiquetas</button>

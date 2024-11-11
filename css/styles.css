@@ -17,8 +17,8 @@ body {
 
 .label-container .cod {
     font-size: 12pt;
-    letter-spacing: 1mm;
-    font-weight: 800;
+    letter-spacing: .3mm;
+    font-weight: 700;
 }
 
 .media {
